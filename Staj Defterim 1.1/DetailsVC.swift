@@ -17,6 +17,7 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     @IBOutlet weak var paragraphText: UITextView!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -55,8 +56,8 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     //attributes
         
         newStajDefterim.setValue(countDay.text, forKey: "countDay")
-        newStajDefterim.setValue(paragraphText, forKey: "paragraph")
-        newStajDefterim.setValue(titleText, forKey: "title")
+        newStajDefterim.setValue(paragraphText.text, forKey: "paragraph")
+        newStajDefterim.setValue(titleText.text, forKey: "title")
         //Date icin bunun dogru olduguna emin degilim.
         newStajDefterim.setValue(dateText.text, forKey: "date")
         
