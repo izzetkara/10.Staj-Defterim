@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0A2632A22CB751C001145EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A2632922CB751C001145EC /* AppDelegate.swift */; };
+		E0A2632C22CB751C001145EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A2632B22CB751C001145EC /* ViewController.swift */; };
+		E0A2632F22CB751C001145EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A2632D22CB751C001145EC /* Main.storyboard */; };
+		E0A2633222CB751C001145EC /* Staj_Defterim_1_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0A2633022CB751C001145EC /* Staj_Defterim_1_1.xcdatamodeld */; };
+		E0A2633422CB751D001145EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A2633322CB751D001145EC /* Assets.xcassets */; };
+		E0A2633722CB751D001145EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A2633522CB751D001145EC /* LaunchScreen.storyboard */; };
+		E0A2633F22CB76D1001145EC /* ResimEkle.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A2633E22CB76D1001145EC /* ResimEkle.png */; };
+		E0A2634122CB775B001145EC /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A2634022CB775A001145EC /* DetailsVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E0A2632622CB751C001145EC /* Staj Defterim 1.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Staj Defterim 1.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0A2632922CB751C001145EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0A2632B22CB751C001145EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0A2632E22CB751C001145EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0A2633122CB751C001145EC /* Staj_Defterim_1_1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Staj_Defterim_1_1.xcdatamodel; sourceTree = "<group>"; };
+		E0A2633322CB751D001145EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0A2633622CB751D001145EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0A2633822CB751D001145EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0A2633E22CB76D1001145EC /* ResimEkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ResimEkle.png; sourceTree = "<group>"; };
+		E0A2634022CB775A001145EC /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0A2632322CB751C001145EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0A2631D22CB751C001145EC = {
+			isa = PBXGroup;
+			children = (
+				E0A2632822CB751C001145EC /* Staj Defterim 1.1 */,
+				E0A2632722CB751C001145EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0A2632722CB751C001145EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0A2632622CB751C001145EC /* Staj Defterim 1.1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0A2632822CB751C001145EC /* Staj Defterim 1.1 */ = {
+			isa = PBXGroup;
+			children = (
+				E0A2633E22CB76D1001145EC /* ResimEkle.png */,
+				E0A2632922CB751C001145EC /* AppDelegate.swift */,
+				E0A2632B22CB751C001145EC /* ViewController.swift */,
+				E0A2634022CB775A001145EC /* DetailsVC.swift */,
+				E0A2632D22CB751C001145EC /* Main.storyboard */,
+				E0A2633322CB751D001145EC /* Assets.xcassets */,
+				E0A2633522CB751D001145EC /* LaunchScreen.storyboard */,
+				E0A2633822CB751D001145EC /* Info.plist */,
+				E0A2633022CB751C001145EC /* Staj_Defterim_1_1.xcdatamodeld */,
+			);
+			path = "Staj Defterim 1.1";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0A2632522CB751C001145EC /* Staj Defterim 1.1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0A2633B22CB751D001145EC /* Build configuration list for PBXNativeTarget "Staj Defterim 1.1" */;
+			buildPhases = (
+				E0A2632222CB751C001145EC /* Sources */,
+				E0A2632322CB751C001145EC /* Frameworks */,
+				E0A2632422CB751C001145EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Staj Defterim 1.1";
+			productName = "Staj Defterim 1.1";
+			productReference = E0A2632622CB751C001145EC /* Staj Defterim 1.1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0A2631E22CB751C001145EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Izzet Kara";
+				TargetAttributes = {
+					E0A2632522CB751C001145EC = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = E0A2632122CB751C001145EC /* Build configuration list for PBXProject "Staj Defterim 1.1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0A2631D22CB751C001145EC;
+			productRefGroup = E0A2632722CB751C001145EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0A2632522CB751C001145EC /* Staj Defterim 1.1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0A2632422CB751C001145EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0A2633722CB751D001145EC /* LaunchScreen.storyboard in Resources */,
+				E0A2633F22CB76D1001145EC /* ResimEkle.png in Resources */,
+				E0A2633422CB751D001145EC /* Assets.xcassets in Resources */,
+				E0A2632F22CB751C001145EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0A2632222CB751C001145EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0A2632C22CB751C001145EC /* ViewController.swift in Sources */,
+				E0A2634122CB775B001145EC /* DetailsVC.swift in Sources */,
+				E0A2632A22CB751C001145EC /* AppDelegate.swift in Sources */,
+				E0A2633222CB751C001145EC /* Staj_Defterim_1_1.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E0A2632D22CB751C001145EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0A2632E22CB751C001145EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E0A2633522CB751D001145EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0A2633622CB751D001145EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0A2633922CB751D001145EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E0A2633A22CB751D001145EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0A2633C22CB751D001145EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R64D6JX44C;
+				INFOPLIST_FILE = "Staj Defterim 1.1/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "stajdefterim.Staj-Defterim-1-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0A2633D22CB751D001145EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R64D6JX44C;
+				INFOPLIST_FILE = "Staj Defterim 1.1/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "stajdefterim.Staj-Defterim-1-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0A2632122CB751C001145EC /* Build configuration list for PBXProject "Staj Defterim 1.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0A2633922CB751D001145EC /* Debug */,
+				E0A2633A22CB751D001145EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0A2633B22CB751D001145EC /* Build configuration list for PBXNativeTarget "Staj Defterim 1.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0A2633C22CB751D001145EC /* Debug */,
+				E0A2633D22CB751D001145EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E0A2633022CB751C001145EC /* Staj_Defterim_1_1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E0A2633122CB751C001145EC /* Staj_Defterim_1_1.xcdatamodel */,
+			);
+			currentVersion = E0A2633122CB751C001145EC /* Staj_Defterim_1_1.xcdatamodel */;
+			path = Staj_Defterim_1_1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E0A2631E22CB751C001145EC /* Project object */;
+}
