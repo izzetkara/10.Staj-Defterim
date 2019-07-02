@@ -16,7 +16,7 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     @IBOutlet weak var titleText: UITextField!
     @IBOutlet weak var paragraphText: UITextView!
     
-    
+    var chosenPicture = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +24,9 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         imageView.isUserInteractionEnabled = true
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DetailsVC.selectImage))
         imageView.addGestureRecognizer(gestureRecognizer)
+        
+        print(chosenPicture)
+        
     }
     
     
@@ -59,7 +62,7 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         newStajDefterim.setValue(paragraphText.text, forKey: "paragraph")
         newStajDefterim.setValue(titleText.text, forKey: "title")
         //Date icin bunun dogru olduguna emin degilim.
-        newStajDefterim.setValue(dateText.text, forKey: "date")
+        /*newStajDefterim.setValue(dateText.text, forKey: NSDate) */
         
         let data = imageView.image?.jpegData(compressionQuality: 0.5)
         newStajDefterim.setValue(data, forKey: "image")
