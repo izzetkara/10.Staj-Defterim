@@ -16,11 +16,25 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     @IBOutlet weak var titleText: UITextField!
     @IBOutlet weak var paragraphText: UITextView!
     
+    private var datePicker: UIDatePicker?
+    
     var chosenPicture = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    //Date picker
+        datePicker = UIDatePicker()
+        datePicker?.datePickerMode = .date
+        datePicker?.addTarget(self, action: #selector(DetailsVC.dateChanged(datePicker:)), for: .valueChanged)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(DetailsVC.viewTapped(gestureRecognizer:)))
+        
+        view.addGestureRecognizer(tapGesture)
+        dateText.inputView = datePicker
+        
+        
+        
         if chosenPicture != "" {
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
@@ -67,6 +81,20 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         
         
         
+    }
+    
+//date picker handler
+    
+    @objc func dateChanged(datePicker: UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        dateText.text = dateFormatter.string(from: datePicker.date)
+        view.endEditing(true)
+    }
+    // gestureRecognizer func
+    
+    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
     
     
