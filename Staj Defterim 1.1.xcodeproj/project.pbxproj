@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0399CA322CD52C5004A76C8 /* IamEngineer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0399CA222CD52C5004A76C8 /* IamEngineer.jpg */; };
 		E0A2632A22CB751C001145EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A2632922CB751C001145EC /* AppDelegate.swift */; };
 		E0A2632C22CB751C001145EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A2632B22CB751C001145EC /* ViewController.swift */; };
 		E0A2632F22CB751C001145EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A2632D22CB751C001145EC /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E0399CA222CD52C5004A76C8 /* IamEngineer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IamEngineer.jpg; sourceTree = "<group>"; };
 		E0A2632622CB751C001145EC /* Staj Defterim 1.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Staj Defterim 1.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A2632922CB751C001145EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0A2632B22CB751C001145EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		E0A2632822CB751C001145EC /* Staj Defterim 1.1 */ = {
 			isa = PBXGroup;
 			children = (
+				E0399CA222CD52C5004A76C8 /* IamEngineer.jpg */,
 				E0A2633E22CB76D1001145EC /* ResimEkle.png */,
 				E0A2632922CB751C001145EC /* AppDelegate.swift */,
 				E0A2632B22CB751C001145EC /* ViewController.swift */,
@@ -131,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0399CA322CD52C5004A76C8 /* IamEngineer.jpg in Resources */,
 				E0A2633722CB751D001145EC /* LaunchScreen.storyboard in Resources */,
 				E0A2633F22CB76D1001145EC /* ResimEkle.png in Resources */,
 				E0A2633422CB751D001145EC /* Assets.xcassets in Resources */,

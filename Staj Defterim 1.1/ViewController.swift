@@ -39,6 +39,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @objc func getInfo() {
         countDayArray.removeAll(keepingCapacity: false)
         
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         
@@ -96,8 +97,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         }
                         
                         break
-                        
-                        
                         
                         
                       }
