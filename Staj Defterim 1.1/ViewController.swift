@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     
     var countDayArray = [String]()
+    /*var titleArray = [String]()*/
     var selectedPicture = ""
     /*var paragraphArray = [String]()
     var titleArray = [String]()
@@ -31,7 +32,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
 
-    func getInfo() {
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.getInfo), name: NSNotification.Name(rawValue: "newPicture"), object: nil)
+    }
+    
+    @objc func getInfo() {
+        countDayArray.removeAll(keepingCapacity: false)
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         
@@ -46,6 +53,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     self.countDayArray.append(countDay)
                 }
                 
+                /*if let title = result.value(forKey: "title") as? String {
+                    self.titleArray.append(title)
+                }*/
+                
                 self.tableView.reloadData()
                 
             }
@@ -58,7 +69,47 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "StajDefterim")
+           
+            
+            do {
+                let results = try context.fetch(fetchRequest)
+                
+                for result in results as! [NSManagedObject] {
+                    if let countDay = result.value(forKey: "countDay") as? String {
+                    if countDay == countDayArray[indexPath.row] {
+                        context.delete(result)
+                        countDayArray.remove(at: indexPath.row)
+                        self.tableView.reloadData()
+                        
+                        
+                        do{
+                            try context.save()
+                        } catch {
+                            
+                        }
+                        
+                        break
+                        
+                        
+                        
+                        
+                      }
+                    }
+                }
+                
+            } catch {
+                
+            }
+            
+        }
+    }
     
     
     

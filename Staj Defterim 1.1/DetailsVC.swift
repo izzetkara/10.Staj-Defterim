@@ -21,11 +21,51 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if chosenPicture != "" {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "StajDefterim")
+            fetchRequest.predicate = NSPredicate(format: "countDay= %@", self.chosenPicture)
+            fetchRequest.returnsObjectsAsFaults = false
+            
+            do {
+                let results = try context.fetch(fetchRequest)
+                if results.count > 0 {
+                    for result in results as! [NSManagedObject] {
+                        
+                        countDay.text = self.chosenPicture
+                        
+                        if let title = result.value(forKey: "title") as? String {
+                            titleText.text = title
+                        }
+                        
+                        if let paragraph = result.value(forKey: "paragraph") as? String {
+                            paragraphText.text = paragraph
+                        }
+                        
+                        if let imageData = result.value(forKey: "image") as? Data {
+                            let image = UIImage(data: imageData)
+                            self.imageView.image = image
+                        }
+                        
+                    }
+                }
+            } catch {
+                
+            }
+            
+            
+        }
+        
+        
         imageView.isUserInteractionEnabled = true
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DetailsVC.selectImage))
         imageView.addGestureRecognizer(gestureRecognizer)
         
         print(chosenPicture)
+        
+        
         
     }
     
@@ -74,6 +114,11 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         } catch  {
             print("ERROR!")
         }
+        
+        
+        NotificationCenter.default.post(name: NSNotification.Name("newPicture"), object: nil)
+        self.navigationController?.popViewController(animated: true)
+        
         
     }
     
