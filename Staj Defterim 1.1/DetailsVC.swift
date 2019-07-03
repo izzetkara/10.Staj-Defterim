@@ -63,6 +63,10 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
                             self.imageView.image = image
                         }
                         
+                        if let dateCoreData = result.value(forKey: "date") as? String {
+                            dateText.text = dateCoreData
+                        }
+                        
                     }
                 }
             } catch {
@@ -129,8 +133,8 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         newStajDefterim.setValue(countDay.text, forKey: "countDay")
         newStajDefterim.setValue(paragraphText.text, forKey: "paragraph")
         newStajDefterim.setValue(titleText.text, forKey: "title")
-        //Date icin bunun dogru olduguna emin degilim.
-        /*newStajDefterim.setValue(dateText.text, forKey: NSDate) */
+        //Date icin bunun dogru olduguna emin degilim. Dogru!!! kod calisiyor.
+        newStajDefterim.setValue(dateText.text, forKey: "date")
         
         let data = imageView.image?.jpegData(compressionQuality: 0.5)
         newStajDefterim.setValue(data, forKey: "image")
