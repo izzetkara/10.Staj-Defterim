@@ -32,9 +32,7 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         
         view.addGestureRecognizer(tapGesture)
         dateText.inputView = datePicker
-        
-        
-        
+ 
         if chosenPicture != "" {
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
@@ -72,19 +70,14 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
             } catch {
                 
             }
-            
-            
+          
         }
-        
         
         imageView.isUserInteractionEnabled = true
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DetailsVC.selectImage))
         imageView.addGestureRecognizer(gestureRecognizer)
-        
+    
         print(chosenPicture)
-        
-        
-        
     }
     
 //date picker handler
@@ -121,6 +114,7 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     
  // kaydetme butonu
     @IBAction func saveClicked(_ sender: Any) {
+        
         //appdelegate ulasmak icin
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
@@ -139,7 +133,6 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         let data = imageView.image?.jpegData(compressionQuality: 0.5)
         newStajDefterim.setValue(data, forKey: "image")
         
-        
         do {
             try context.save()
             print("No ERROR!")
@@ -147,13 +140,7 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
             print("ERROR!")
         }
         
-        
         NotificationCenter.default.post(name: NSNotification.Name("newPicture"), object: nil)
         self.navigationController?.popViewController(animated: true)
-        
-        
     }
-    
-    
-
 }

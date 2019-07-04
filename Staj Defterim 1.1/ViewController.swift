@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @objc func getInfo() {
-        countDayArray.removeAll(keepingCapacity: false)
+        countDayArray.removeAll(keepingCapacity: true)
         
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -66,8 +66,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } catch  {
             
         }
-        
-        
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -82,6 +80,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             do {
                 let results = try context.fetch(fetchRequest)
                 
+             
                 for result in results as! [NSManagedObject] {
                     if let countDay = result.value(forKey: "countDay") as? String {
                     if countDay == countDayArray[indexPath.row] {
@@ -97,8 +96,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         }
                         
                         break
-                        
-                        
                       }
                     }
                 }
@@ -109,10 +106,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         }
     }
-    
-    
-    
-    
+   
     @IBAction func addButtonClick(_ sender: Any) {
         selectedPicture = ""
         performSegue(withIdentifier: "toDetailsVC", sender: nil)
